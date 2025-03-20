@@ -1,0 +1,84 @@
+/* mutual styles */
+.sidebar-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.list-item {
+    text-transform: uppercase;
+    font-weight: 200;
+    cursor: pointer;
+    margin: .3rem;
+}
+
+.games-list, .comics-list {
+    margin-bottom: 1rem;
+    text-indent: 2rem;   
+}
+
+
+/* component class styles */
+.sidebar {
+    width: 20vw;
+    background-color: #281534;
+    color: #c4abab;
+    font-size: 1.4rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    /* text-transform: uppercase; */
+    margin: 0 auto;
+    padding: 2rem;
+
+    .profile {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 0;
+        margin-bottom: 1rem;
+
+        .profile__picture {
+            width: 4rem;
+            height: 4rem;
+            background-color: rgb(71, 133, 187);
+            border-radius: 50%;
+            /* border: none; */
+        }
+
+        .profile__name {
+            /* text-transform: capitalize; */
+        }
+    }
+
+    .add-new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        /* background-color: #331d41; */
+        border-top: .2rem solid #331d41;
+        border-bottom: .2rem solid #331d41;
+        padding: .3rem 0;
+        cursor: pointer;
+
+        .plus-img {
+            width: 1.5rem;
+            margin-left: .4rem;
+        }
+    }
+
+    .collection {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: flex-end;
+        margin-bottom: 3rem;
+        
+        
+    }
+}
