@@ -10,6 +10,11 @@
     font-weight: 200;
     cursor: pointer;
     margin: .3rem;
+    display: flex;
+
+    .list-item-icon {
+        width: 1.2rem;
+    }
 }
 
 .games-list, .comics-list {
@@ -17,20 +22,25 @@
     text-indent: 2rem;   
 }
 
+.list-item-link {
+    color: #c4abab;
+}
+
 
 /* component class styles */
 .sidebar {
-    width: 20vw;
+    width: 20rem;
     background-color: #281534;
+    /* background-image: linear-gradient(to right, #281534, #5b247d, #8709d5); */
     color: #c4abab;
     font-size: 1.4rem;
     height: 100vh;
+    font-weight: 300;
     position: fixed;
     top: 0;
     left: 0;
-    font-weight: 300;
     /* text-transform: uppercase; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 2rem;
 
     .profile {
@@ -43,9 +53,11 @@
         margin-bottom: 1rem;
 
         .profile__picture {
-            width: 4rem;
-            height: 4rem;
-            background-color: rgb(71, 133, 187);
+            width: 4.5rem;
+            height: 4.5rem;
+            background-image: url('../assets/user.png');
+            background-position: center;
+            background-size: cover;
             border-radius: 50%;
             /* border: none; */
         }

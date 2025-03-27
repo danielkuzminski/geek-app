@@ -1,6 +1,9 @@
 //styles
 import './sidebar.css'
+
+// assets
 import plus from '../assets/plus.png'
+import playstation from '../assets/playstation.png'
 
 //router
 import { Link } from 'react-router-dom'
@@ -30,11 +33,16 @@ export default function Sidebar() {
             </div>
         </div>
         <div className="favourites">
-            <h3 className='sidebar-title'>ulubione</h3>
+            <h3 className='sidebar-title'>kolekcja</h3>
             <div className="fav">
               <ul className="games-list">
-                <li className='list-item'>gry</li>
-                <li className='list-item'>komiksy</li>
+                <Link className='list-item-link' to={'/gry'}>
+                  <li className='list-item'>gry</li>
+                </Link>
+                <Link className='list-item-link' to={'/komiksy'}>
+                  <li className='list-item'>komiksy</li>
+                </Link>
+                
               </ul>
             </div>
         </div>
