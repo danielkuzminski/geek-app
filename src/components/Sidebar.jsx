@@ -21,15 +21,18 @@ export default function Sidebar() {
             <img className='plus-img' src={plus} alt="" />
         </div>
         <div className="collection">
+        <h3 className='sidebar-title'><Link to={'/'} className='list-item-link'>Domowa</Link></h3>
+        </div>
+        <div className="collection">
           <h3 className='sidebar-title'>gry</h3>
               <ul className="games-list">
-                <li className='list-item'>Playstation</li>
-                <li className='list-item'>Nintendo</li>
-                <li className='list-item'>Steam</li>
+                <li className='list-item'><Link to={'/playstation'} className='list-item-link'>Playstation</Link></li>
+                <li className='list-item'><Link to={'/nintendo'} className='list-item-link'>Nintendo</Link></li>
+                <li className='list-item'><Link to={'/steam'} className='list-item-link'>Steam</Link></li>
               </ul>
           <h3 className='sidebar-title'>komiksy</h3>
             <div className="comics-list">
-              <p className='list-item'>komiksy</p>
+              <p className='list-item'><Link to={'/komiksy'} className='list-item-link'>komiksy</Link></p>
             </div>
         </div>
         <div className="favourites">

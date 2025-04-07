@@ -36,9 +36,9 @@
     font-size: 1.4rem;
     height: 100vh;
     font-weight: 300;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     /* text-transform: uppercase; */
     /* margin: 0 auto; */
     padding: 2rem;

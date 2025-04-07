@@ -9,7 +9,9 @@ import Gry from './pages/Gry.jsx'
 import NotFound from './pages/NotFound.jsx'
 import Komiks from './pages/Komiks.jsx'
 import Gra from './pages/Gra.jsx'
-
+import Playstation from './pages/Playstation.jsx'
+import Nintendo from './pages/Nintendo.jsx'
+import Steam from './pages/Steam.jsx'
 
 // step 1 - importing create browser router & router provider
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -21,9 +23,12 @@ const router = createBrowserRouter([
   {path: "/", element: <App />},
   {path: '/komiksy', element: <Komiksy />},
   {path: '/gry', element: <Gry />},
-  {path: '*', element: <NotFound />},
+  {path: '/*', element: <NotFound />},
   {path: '/komiksy/:id', element: <Komiks />},
-  {path: '/gry/:id', element: <Gra />}
+  {path: '/gry/:id', element: <Gra />},
+  {path: '/playstation', element: <Playstation />},
+  {path: '/nintendo', element: <Nintendo />},
+  {path: '/steam', element: <Steam />}
 ])
 
 createRoot(document.getElementById('root')).render(

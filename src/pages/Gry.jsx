@@ -13,19 +13,19 @@ function Gry() {
 	]
 
 	return (
-		<>
+		<div className='games'>
 			<Sidebar />
-			<div className="games-page">
+			<div>
 				<h2>games list</h2>
 				{games.map(game => (
-					<div className="games-showcase" key={game.id}>
+					<div className='games-showcase' key={game.id}>
 						<Link to={`/gry/${game.id}`}>
 							<p>{game.title}</p>
 						</Link>
 					</div>
 				))}
 			</div>
-		</>
+		</div>
 	)
 }
 
