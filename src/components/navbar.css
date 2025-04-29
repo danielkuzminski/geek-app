@@ -1,0 +1,21 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    gap: 4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    
+    .navigation__link {
+        color: #5a5757;
+
+
+        .navigation__icon {
+            padding: 0 .3rem;
+            width: 2.5rem;
+        }
+    }
+}

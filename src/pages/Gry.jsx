@@ -1,4 +1,5 @@
-import Sidebar from "../components/Sidebar"
+// import Sidebar from "../components/Sidebar"
+import Navbar from "../components/Navbar"
 import "./gry.css"
 
 // router
@@ -14,7 +15,8 @@ function Gry() {
 
 	return (
 		<div className='games'>
-			<Sidebar />
+			{/* <Sidebar /> */}
+			<Navbar />
 			<div>
 				<h2>games list</h2>
 				{games.map(game => (
